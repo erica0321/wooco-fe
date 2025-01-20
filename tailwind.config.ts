@@ -1,11 +1,7 @@
 import type { Config } from 'tailwindcss'
 
 const config: Config = {
-  content: [
-    './src/pages/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/components/**/*.{js,ts,jsx,tsx,mdx}',
-    './src/app/**/*.{js,ts,jsx,tsx,mdx}',
-  ],
+  content: ['./app/**/*.{js,ts,jsx,tsx,mdx}', './src/**/*.{js,ts,jsx,tsx,mdx}'],
   theme: {
     extend: {
       colors: {
@@ -20,6 +16,7 @@ const config: Config = {
         kakao: '#FFDC00',
         'search-gray': '#747474',
         description: 'rgba(0, 0, 0, 0.5)',
+        black13: 'rgba(0, 0, 0, 0.13)',
       },
       fontSize: {
         headline: '20px',
@@ -40,9 +37,11 @@ const config: Config = {
       },
       boxShadow: {
         custom: '0 -2px 4px rgba(0, 0, 0, 0.05)',
+        'floating-button': '0 0 5.1px rgba(0, 0, 0, 0.4)',
       },
     },
   },
   plugins: [],
 }
+
 export default config
